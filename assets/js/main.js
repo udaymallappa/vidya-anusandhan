@@ -61,8 +61,9 @@ Index All JS
             return this.length > 0;
         };
         // Variables
-        var siteWidth = 1280;
-        var scale = screen.width /siteWidth;
+        var winWidth = $(window).width();
+        var siteWidth = 1280
+        var scale = winWidth /siteWidth;
         document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
         var $html = $('html'),
             $elementCarousel = $('.rn-slick-activation');
